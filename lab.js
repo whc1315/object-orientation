@@ -164,7 +164,7 @@ const statePop = {
 
 function totalPopulation(obj) {
   console.log(obj);
-  let{utah, arizona, california, texas} = obj;
+  let { utah, arizona, california, texas } = obj;
   let total = utah + california + texas + arizona;
   return total
 }
@@ -189,13 +189,13 @@ const foodObj = {
 }
 let foodArr = []
 function ingredients(obj) {
-  let {carb, fat, protein} = obj;
-  foodArr.push(carb)
-  foodArr.push(fat)
-  foodArr.push(protein)
+  let { carb, fat, protein } = obj;
+  foodArr.push(carb);
+  foodArr.push(fat);
+  foodArr.push(protein);
   console.log(foodArr)
 }
-ingredients(foodObj)
+// ingredients(foodObj)
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -218,13 +218,20 @@ var user = {
 
 //Code Here
 
+user.name = 'Bryan G. Smith'
+user.email = 'bryan.smith@devmounta.in'
+
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
-  Using the user object above, delete the users age off of the object.
+Using the user object above, delete the users age off of the object.
 */
 
 //Code Here
+
+delete user.age
+
+// console.log(user)
 
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
@@ -236,8 +243,17 @@ var user = {
 
 //Code here
 
+class cat {
+  constructor(name, age, color) {
+    this.name = name;
+    this.age = age;
+    this.color = color;
+  }
+}
 
+let cat1 = new cat('Doris', 13, 'black');
 
+console.log(cat1.name)
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
   Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: name, age, favoriteSpell.
