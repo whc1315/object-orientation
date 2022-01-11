@@ -83,7 +83,7 @@ and change the value of the book key in your favoriteThings object to be 'Harry 
 favoriteThings.food = 'Chicken Nuggets';
 favoriteThings.book = 'Lord of the Rings';
 
-console.log(favoriteThings)
+// console.log(favoriteThings)
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
@@ -103,6 +103,14 @@ var carDetails = {
 
 //Code Here
 
+let {color, make, model, year} = carDetails
+
+// console.log(color)
+// console.log(make)
+// console.log(model)
+// console.log(year)
+// console.log(carDetails)
+
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -113,13 +121,24 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
-  //Code Here
+
+const nameObj = {
+  title: 'President', 
+  firstName: 'Bob', 
+  lastName: 'Smith'}
+
+function greeting(obj) {
+  let {title, firstName, lastName} = obj;
+  console.log(`Hello, ${title} ${firstName} ${lastName}`)
+  }
+  greeting(nameObj)
+//Code Here
+
   
   // Do not edit the code below.
-  return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
+  // return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
-}
+
 
 
 
