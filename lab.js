@@ -6,10 +6,10 @@
 
 //Code here
 
-const me = {
-  name: 'Will',
-  age: 27
-}
+// const me = {
+//   name: 'Will',
+//   age: 27
+// }
 // console.log(me)
 
 
@@ -243,7 +243,7 @@ delete user.age
 
 //Code here
 
-class cat {
+class Cat {
   constructor(name, age, color) {
     this.name = name;
     this.age = age;
@@ -251,9 +251,9 @@ class cat {
   }
 }
 
-let cat1 = new cat('Doris', 13, 'black');
+let cat1 = new Cat('Doris', 13, 'black');
 
-console.log(cat1.name)
+// console.log(cat1.name)
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
   Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: name, age, favoriteSpell.
@@ -263,6 +263,23 @@ console.log(cat1.name)
 */
 
 //Code here
+
+class Wizard{
+  constructor(name, age, favoriteSpell){
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  }
+}
+function castSpell(wizards) {
+  let {name, age, favoriteSpell} = wizards;
+    console.log(`${name} has cast ${favoriteSpell}`)
+    }
+
+let wizard1 = new Wizard('albus', 103, 'Expelliarmus');
+console.log(wizard1)
+castSpell(wizard1)
+
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
