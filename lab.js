@@ -335,8 +335,8 @@ let phone3 = new Phone("google", "pixel", 1000, "red", 399);
 */
 
 //Code Here
-changePrice(phone1, 599);
-console.log(phone1);
+// changePrice(phone1, 599);
+// console.log(phone1);
 
 /*
   Now call the sell method on one of your other phone objects
@@ -346,8 +346,8 @@ console.log(phone1);
 
 //Code Here
 
-sell(phone2)
-console.log(phone2.sold)
+// sell(phone2)
+// console.log(phone2.sold)
 
 
 
@@ -368,6 +368,9 @@ const colors = {
 //do not edit this object
 
 //Code Here
+
+// let colorCopy = {...colors}
+// console.log(colorCopy)
 
 /*
  Now use the spread operator to combine the following 2 objects into one. 
@@ -394,6 +397,11 @@ const shippingInfo = {
 //do not edit the objects above
 
 //Code Here
+
+// let helensInfo = {...contactInfo, ...shippingInfo}
+// console.log(helensInfo)
+
+
 
 //Print helensInfo to see what it looks like, there should be no repeating properties.
 
