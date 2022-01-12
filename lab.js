@@ -534,15 +534,15 @@ Call the checkSeaworthiness method on your new boat
 
 //Code Here
 
-myFirstBoat.checkSeaworthiness();
+// myFirstBoat.checkSeaworthiness();
 /*
   Now run the performMaintenance method on your boat
 */
 
 //Code Here
 
-myFirstBoat.performMaintinance();
-console.log(myFirstBoat)
+// myFirstBoat.performMaintinance();
+// console.log(myFirstBoat)
 
 /*
   Check the seaworthiness once more (you should be ready for the water!)
@@ -550,4 +550,27 @@ console.log(myFirstBoat)
 
 //Code Here
 
-myFirstBoat.checkSeaworthiness();
+// myFirstBoat.checkSeaworthiness();
+
+
+
+class Sloth{
+  constructor(name, color, age, speed){
+    this.name = name
+    this.color = color
+    this.age = age
+    this.speed = speed
+  }
+  speedBoost(){
+    this.speed += 5
+    console.log(`${this.name} now has a speed of ${this.speed}`)
+  }
+}
+
+let sloth1 = new Sloth ('Gary', 'brown', 8, 3)
+
+sloth1.speedBoost()
+
+console.log(sloth1)
+
+sloth1.speedBoost()
